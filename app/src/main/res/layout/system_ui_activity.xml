@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SystemUiActivity">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:onClick="openAndOpen"
+        android:text="open Status, open Navigation" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/btn1"
+        android:background="@color/colorAccent"
+        android:onClick="openAndClose"
+        android:text="open Status, close Navigation" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/btn2"
+        android:background="@color/colorAccent"
+        android:onClick="closeAndOpen"
+        android:text="close Status, open Navigation" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@id/btn3"
+        android:background="@color/colorAccent"
+        android:onClick="closeAndClose"
+        android:text="close Status, close Navigation" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:text="top" />
+
+
+</RelativeLayout>
